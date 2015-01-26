@@ -1,0 +1,5 @@
+Get Proxy configurations by registry info :
+
+- reg query "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Wpad" /s | find /i "WpadDetectedURL"
+- After getting results, copy/paste link to browser download proxy config file and get proxy default value.
+- After just configure .gitconfig file with a new line ex: [http]  proxy = proxy-emea.intra.coriant.com:81
